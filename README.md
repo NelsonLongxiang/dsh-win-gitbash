@@ -49,24 +49,24 @@ DSH（DeepSeek Harness）在 Windows 上有两个原生命令工具的痛点：
 
 ## 安装
 
-本插件以 npm 包 **`dsh-tool-gitbash`** 发布，声明了 `dsh.bundle` manifest，可直接通过 DSH 插件系统安装。
+本插件以 npm 包 **`@nelsonlongxiang/dsh-tool-gitbash`** 发布，声明了 `dsh.bundle` manifest，可直接通过 DSH 插件系统安装。
 
 **方式一：命令行安装（推荐）**
 
 ```sh
-dsh plugin add dsh-tool-gitbash
+dsh plugin add @nelsonlongxiang/dsh-tool-gitbash
 ```
 
 > 安装命令会自动处理 `@deepseek-ai/*` peer 依赖；装完在 DSH 组合（composition）/ profile 中启用该 bundle，重启后模型即可获得 `gitbash` 工具。
 
 **方式二：dsh-market 图形界面**
 
-在 DSH Web 设置 → 插件市场（dsh-market）中搜索 `dsh-tool-gitbash`，一键安装。
+在 DSH Web 设置 → 插件市场（dsh-market）中搜索 `@nelsonlongxiang/dsh-tool-gitbash`，一键安装。
 
 **方式三：手动放入 node_modules**
 
 1. 将本包放入 DSH 的 `node_modules`（如
-   `%APPDATA%\npm\node_modules\dsh-tool-gitbash`）或作为本地依赖引用。
+   `%APPDATA%\npm\node_modules\@nelsonlongxiang\dsh-tool-gitbash`）或作为本地依赖引用。
 2. 确保 peer 依赖可用（`@deepseek-ai/cordis`、`@deepseek-ai/dsh-tools`、
    `@deepseek-ai/dsh-llm`、`@deepseek-ai/dsh-sandbox`、`@deepseek-ai/dsh-shell`、
    `@deepseek-ai/dsh-timeout`）。
